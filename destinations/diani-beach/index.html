@@ -56,6 +56,14 @@
     <link rel="icon" href="../../img/icon.ico" sizes="192x192" />
     <link rel="apple-touch-icon" href="../../img/icon.ico" />
     <meta name="msapplication-TileImage" content="../../img/icon.ico" />
+    <link rel="stylesheet" href="../../wp-content/themes/bonvoyage/assets/css/ion-icons/ionicons.min.css">
+    <link
+      rel="stylesheet"
+      id="eltd-ion_icons-css"
+      href="../../wp-content/themes/bonvoyage/assets/css/ion-icons/css/ionicons.min%EF%B9%96ver=6.2.6.css"
+      type="text/css"
+      media="all"
+    />
   </head>
   <body class="page-template page-template-full-width page-template-full-width-php page page-id-diani-beach theme-bonvoyage eltd-core-1.5 eltd-social-login-1.2 eltd-tours-1.2.1 woocommerce-no-js bonvoyage-ver-2.0 eltd-grid-1300 eltd-sticky-header-on-scroll-up eltd-dropdown-animate-height eltd-header-standard eltd-menu-area-shadow-disable eltd-menu-area-in-grid-shadow-disable eltd-menu-area-border-disable eltd-menu-area-in-grid-border-disable eltd-logo-area-border-disable eltd-header-vertical-shadow-disable eltd-header-vertical-border-disable eltd-side-menu-slide-from-right eltd-woocommerce-columns-3 eltd-woo-normal-space eltd-woo-pl-info-below-image eltd-woo-single-thumb-on-left-side eltd-woo-single-has-pretty-photo eltd-default-mobile-header eltd-sticky-up-mobile-header eltd-header-top-enabled eltd-fullscreen-search eltd-search-fade wpb-js-composer js-comp-ver-6.13.0 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
     
@@ -158,8 +166,10 @@
                                 <div class="wpb_wrapper">
                                   <div class="wpb_text_column wpb_content_element">
                                     <div class="wpb_wrapper">
-                                      <div style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../../img/diani-beach.jpg'); background-size: cover; background-position: center; height: 500px; display: flex; align-items: center; justify-content: center; text-align: center; color: white; border-radius: 8px; margin-bottom: 40px;">
-                                        <div>
+                                      <div style="position: relative; height: 500px; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 8px; margin-bottom: 40px; overflow: hidden;">
+                                        <img src="../../img/diani-beach.jpg" alt="Diani Beach" style="width: 100%; height: 100%; object-fit: cover; display: block; filter: none;" />
+                                        <div style="position: absolute; inset: 0; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)); border-radius: 8px;"></div>
+                                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; color: white; z-index: 2; width: 100%; height: 100%;">
                                           <h1 style="font-size: 48px; margin-bottom: 20px; font-family: 'Playfair Display SC', serif;">Diani Beach</h1>
                                           <p style="font-size: 20px; margin-bottom: 30px;">Kenya's Premier Beach Destination</p>
                                           <a href="#packages" style="background: #0693e3; color: white; padding: 15px 30px; text-decoration: none; border-radius: 4px; font-weight: bold; transition: background 0.3s ease;">View Beach Packages</a>
@@ -183,6 +193,11 @@
                                       <p style="font-size: 16px; line-height: 1.8; color: #666; margin-bottom: 20px;">
                                         Diani Beach is Kenya's most beautiful and popular beach destination, stretching for 17 kilometers along the Indian Ocean coast. Located 30 kilometers south of Mombasa, this pristine white sand beach is consistently ranked among the best beaches in Africa and the world.
                                       </p>
+                                      <!-- Did you know? box -->
+                                      <div style="background: #e6f4fa; border-left: 6px solid #0693e3; border-radius: 8px; padding: 24px 28px; margin: 32px 0; box-shadow: 0 2px 8px rgba(6,147,227,0.08);">
+                                        <h3 style="color: #0693e3; margin-bottom: 12px; font-family: 'Playfair Display SC', serif; font-size: 22px;">Did you know?</h3>
+                                        <p style="font-size: 16px; color: #333; margin: 0;">Diani Beach has been voted Africa’s leading beach destination for several years in a row, and its coral reefs are home to dolphins, sea turtles, and vibrant marine life.</p>
+                                      </div>
                                       <p style="font-size: 16px; line-height: 1.8; color: #666; margin-bottom: 20px;">
                                         The beach is characterized by its powdery white sand, crystal-clear turquoise waters, and swaying palm trees that create a perfect tropical paradise. The warm Indian Ocean waters are ideal for swimming, snorkeling, diving, and a variety of water sports throughout the year.
                                       </p>
@@ -310,110 +325,68 @@
                                 <div class="wpb_wrapper">
                                   <div class="wpb_text_column wpb_content_element">
                                     <div class="wpb_wrapper">
-                                      <h2 style="color: #333; margin-bottom: 30px; font-family: 'Playfair Display SC', serif; text-align: center;">Beach Holiday Packages</h2>
-                                      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
-                                        <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                                          <div style="background: #0693e3; color: white; padding: 20px; text-align: center;">
-                                            <h3 style="margin: 0; font-family: 'Playfair Display SC', serif;">Beach Escape</h3>
-                                            <p style="margin: 10px 0 0 0; font-size: 18px; font-weight: bold;">3 Days / 2 Nights</p>
+                                      <h2 style="text-align: center; font-family: 'Playfair Display SC', serif; font-size: 40px; margin-bottom: 40px;">Beach Holiday Packages</h2>
+                                      <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: stretch;">
+                                        <!-- Baobab Beach Resort & Spa Card -->
+                                        <div style="background: #fff; border-radius: 18px; box-shadow: 0 8px 32px rgba(6,147,227,0.10); overflow: hidden; max-width: 370px; min-width: 300px; flex: 1 1 320px; display: flex; flex-direction: column;">
+                                          <div style="height: 180px; background: url('../../img/baobab.jpg') center/cover no-repeat;"></div>
+                                          <div style="padding: 0 28px 28px 28px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                            <div style="margin-top: -32px;">
+                                              <span style="display: inline-block; background: #0693e3; color: #fff; font-weight: bold; font-size: 15px; padding: 8px 22px; border-radius: 0 0 16px 16px; box-shadow: 0 2px 8px rgba(6,147,227,0.10);">Baobab Beach Resort & Spa</span>
                                           </div>
-                                          <div style="padding: 25px;">
-                                            <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Beachfront hotel accommodation
-                                              </li>
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Daily breakfast included
-                                              </li>
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Airport transfers
-                                              </li>
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Welcome cocktail
-                                              </li>
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Beach activities available
-                                              </li>
+                                            <div style="margin: 18px 0 10px 0; font-size: 17px; color: #333; font-family: 'Playfair Display SC', serif; font-weight: 600;">5-Star Luxury Resort</div>
+                                            <ul style="list-style: none; padding: 0; margin: 0 0 18px 0; color: #666; font-size: 15px;">
+                                              <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #00d084; margin-right: 8px;"></i>Private beach access, multiple pools</li>
+                                              <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #00d084; margin-right: 8px;"></i>Spa facilities, all-inclusive packages</li>
+                                              <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #00d084; margin-right: 8px;"></i>Water sports center, diving school</li>
                                             </ul>
-                                            <div style="text-align: center;">
-                                              <p style="font-size: 24px; font-weight: bold; color: #0693e3; margin-bottom: 15px;">From $250 per person</p>
-                                              <a href="../../contact-us/index.html" style="background: #0693e3; color: white; padding: 12px 25px; text-decoration: none; border-radius: 4px; font-weight: bold; transition: background 0.3s ease;">Book Now</a>
+                                            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px;">
+                                              <span style="background: #eaf6fd; color: #0693e3; font-weight: bold; font-size: 18px; padding: 8px 18px; border-radius: 12px;">KES 35,000 - 55,000</span>
+                                              <span style="font-size: 13px; color: #888;">per night (2 adults)</span>
                                             </div>
+                                            <a href="https://www.booking.com/hotel/ke/baobab-beach-resort-and-spa.en-gb.html" target="_blank" style="background: linear-gradient(90deg,#0693e3,#00d084); color: #fff; font-weight: bold; padding: 14px 0; border-radius: 8px; text-align: center; text-decoration: none; font-size: 17px; letter-spacing: 0.5px; transition: background 0.2s;">Book Now</a>
                                           </div>
                                         </div>
 
-                                        <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                                          <div style="background: #00d084; color: white; padding: 20px; text-align: center;">
-                                            <h3 style="margin: 0; font-family: 'Playfair Display SC', serif;">Adventure Beach</h3>
-                                            <p style="margin: 10px 0 0 0; font-size: 18px; font-weight: bold;">5 Days / 4 Nights</p>
+                                        <!-- Diani Reef Beach Resort & Spa Card -->
+                                        <div style="background: #fff; border-radius: 18px; box-shadow: 0 8px 32px rgba(0,208,132,0.10); overflow: hidden; max-width: 370px; min-width: 300px; flex: 1 1 320px; display: flex; flex-direction: column;">
+                                          <div style="height: 180px; background: url('../../img/reef Beach.jpg') center/cover no-repeat;"></div>
+                                          <div style="padding: 0 28px 28px 28px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                            <div style="margin-top: -32px;">
+                                              <span style="display: inline-block; background: #00d084; color: #fff; font-weight: bold; font-size: 15px; padding: 8px 22px; border-radius: 0 0 16px 16px; box-shadow: 0 2px 8px rgba(0,208,132,0.10);">Diani Reef Beach Resort & Spa</span>
                                           </div>
-                                          <div style="padding: 25px;">
-                                            <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Luxury resort accommodation
-                                              </li>
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                All meals included
-                                              </li>
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Water sports activities
-                                              </li>
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Snorkeling trip included
-                                              </li>
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Shimba Hills safari day trip
-                                              </li>
+                                            <div style="margin: 18px 0 10px 0; font-size: 17px; color: #333; font-family: 'Playfair Display SC', serif; font-weight: 600;">5-Star Beach Resort</div>
+                                            <ul style="list-style: none; padding: 0; margin: 0 0 18px 0; color: #666; font-size: 15px;">
+                                              <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #00d084; margin-right: 8px;"></i>Spa, multiple restaurants, pool</li>
+                                              <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #00d084; margin-right: 8px;"></i>Kids club, water sports, live entertainment</li>
+                                              <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #00d084; margin-right: 8px;"></i>Free breakfast, beachfront</li>
                                             </ul>
-                                            <div style="text-align: center;">
-                                              <p style="font-size: 24px; font-weight: bold; color: #0693e3; margin-bottom: 15px;">From $450 per person</p>
-                                              <a href="../../contact-us/index.html" style="background: #00d084; color: white; padding: 12px 25px; text-decoration: none; border-radius: 4px; font-weight: bold; transition: background 0.3s ease;">Book Now</a>
+                                            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px;">
+                                              <span style="background: #eafcf6; color: #00d084; font-weight: bold; font-size: 18px; padding: 8px 18px; border-radius: 12px;">KES 22,000</span>
+                                              <span style="font-size: 13px; color: #888;">per night (2 adults)</span>
                                             </div>
+                                            <a href="https://www.booking.com/hotel/ke/diani-reef-beach-resort-and-spa.en-gb.html" target="_blank" style="background: linear-gradient(90deg,#00d084,#0693e3); color: #fff; font-weight: bold; padding: 14px 0; border-radius: 8px; text-align: center; text-decoration: none; font-size: 17px; letter-spacing: 0.5px; transition: background 0.2s;">Book Now</a>
                                           </div>
                                         </div>
 
-                                        <div style="background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                                          <div style="background: #9b51e0; color: white; padding: 20px; text-align: center;">
-                                            <h3 style="margin: 0; font-family: 'Playfair Display SC', serif;">Luxury Beach Villa</h3>
-                                            <p style="margin: 10px 0 0 0; font-size: 18px; font-weight: bold;">7 Days / 6 Nights</p>
+                                        <!-- Southern Palms Beach Resort Card -->
+                                        <div style="background: #fff; border-radius: 18px; box-shadow: 0 8px 32px rgba(155,81,224,0.10); overflow: hidden; max-width: 370px; min-width: 300px; flex: 1 1 320px; display: flex; flex-direction: column;">
+                                          <div style="height: 180px; background: url('../../img/southern.jpg') center/cover no-repeat;"></div>
+                                          <div style="padding: 0 28px 28px 28px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                            <div style="margin-top: -32px;">
+                                              <span style="display: inline-block; background: #9b51e0; color: #fff; font-weight: bold; font-size: 15px; padding: 8px 22px; border-radius: 0 0 16px 16px; box-shadow: 0 2px 8px rgba(155,81,224,0.10);">Southern Palms Beach Resort</span>
                                           </div>
-                                          <div style="padding: 25px;">
-                                            <ul style="list-style: none; padding: 0; margin-bottom: 25px;">
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Private beachfront villa
-                                              </li>
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Private chef and butler service
-                                              </li>
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                All-inclusive gourmet meals
-                                              </li>
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Private pool and beach access
-                                              </li>
-                                              <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
-                                                <i class="fa fa-check" style="color: #00d084; position: absolute; left: 0; top: 2px;"></i>
-                                                Spa treatments included
-                                              </li>
+                                            <div style="margin: 18px 0 10px 0; font-size: 17px; color: #333; font-family: 'Playfair Display SC', serif; font-weight: 600;">Beachfront Luxury Resort</div>
+                                            <ul style="list-style: none; padding: 0; margin: 0 0 18px 0; color: #666; font-size: 15px;">
+                                              <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #00d084; margin-right: 8px;"></i>Extensive gardens, multiple restaurants</li>
+                                              <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #00d084; margin-right: 8px;"></i>Conference facilities, business center</li>
+                                              <li style="margin-bottom: 10px;"><i class="fa fa-check" style="color: #00d084; margin-right: 8px;"></i>Kids club, family activities</li>
                                             </ul>
-                                            <div style="text-align: center;">
-                                              <p style="font-size: 24px; font-weight: bold; color: #0693e3; margin-bottom: 15px;">From $1,200 per person</p>
-                                              <a href="../../contact-us/index.html" style="background: #9b51e0; color: white; padding: 12px 25px; text-decoration: none; border-radius: 4px; font-weight: bold; transition: background 0.3s ease;">Book Now</a>
+                                            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px;">
+                                              <span style="background: #f6f0fd; color: #9b51e0; font-weight: bold; font-size: 18px; padding: 8px 18px; border-radius: 12px;">KES 28,000 - 45,000</span>
+                                              <span style="font-size: 13px; color: #888;">per night (2 adults)</span>
                                             </div>
+                                            <a href="https://www.booking.com/hotel/ke/southern-palms-beach-resort.en-gb.html" target="_blank" style="background: linear-gradient(90deg,#9b51e0,#0693e3); color: #fff; font-weight: bold; padding: 14px 0; border-radius: 8px; text-align: center; text-decoration: none; font-size: 17px; letter-spacing: 0.5px; transition: background 0.2s;">Book Now</a>
                                           </div>
                                         </div>
                                       </div>
@@ -494,74 +467,148 @@
         <footer class="eltd-page-footer">
           <div class="eltd-footer-top-holder">
             <div class="eltd-footer-top-inner eltd-grid">
-              <div class="eltd-grid-row eltd-footer-top-alignment-center eltd-footer-top-skin-light">
+              <div
+                class="eltd-grid-row eltd-footer-top-alignment-center eltd-footer-top-skin-light"
+              >
                 <div class="eltd-column-content eltd-grid-col-12">
                   <div class="widget eltd-custom-font-widget">
-                    <h2 class="eltd-custom-font-holder eltd-cf-1436" style="font-family: quentin; font-size: 60px; letter-spacing: 2.4px; text-transform: initial; text-align: center;" data-item-class="eltd-cf-1436" data-font-size-680="48px">
+                    <h2
+                      class="eltd-custom-font-holder eltd-cf-4729"
+                      style="
+                        font-family: quentin;
+                        font-size: 60px;
+                        letter-spacing: 2.4px;
+                        text-transform: initial;
+                        text-align: center;
+                      "
+                      data-item-class="eltd-cf-4729"
+                      data-font-size-680="48px"
+                    >
                       Make memories with us
                     </h2>
                   </div>
                   <div class="widget eltd-separator-widget">
-                    <div class="eltd-separator-holder clearfix eltd-separator-center eltd-separator-normal">
-                      <div class="eltd-separator" style="border-style: solid; width: 93px; margin-top: -8px;"></div>
+                    <div
+                      class="eltd-separator-holder clearfix eltd-separator-center eltd-separator-normal"
+                    >
+                      <div
+                        class="eltd-separator"
+                        style="border-style: solid; width: 93px; margin-top: -8px"
+                      ></div>
                     </div>
                   </div>
-                  <a class="eltd-social-icon-widget-holder eltd-icon-has-hover" style="font-size: 26px; margin: 41px 28px 53px 0" href="https://www.facebook.com/qodeinteractive/" target="_blank">
-                    <span class="eltd-social-icon-widget ion-social-facebook"></span>
-                  </a>
-                  <a class="eltd-social-icon-widget-holder eltd-icon-has-hover" style="font-size: 20px; margin: 41px 28px 53px 0" href="https://www.youtube.com/QodeInteractiveVideos" target="_blank">
-                    <span class="eltd-social-icon-widget ion-social-youtube"></span>
-                  </a>
-                  <a class="eltd-social-icon-widget-holder eltd-icon-has-hover" style="font-size: 22px; margin: 42px 28px 53px 0" href="https://twitter.com/qodeinteractive" target="_blank">
-                    <span class="eltd-social-icon-widget ion-social-twitter"></span>
-                  </a>
-                  <a class="eltd-social-icon-widget-holder eltd-icon-has-hover" style="font-size: 24px; margin: 42px 0px 53px 0px" href="https://www.instagram.com/qodeinteractive/" target="_blank">
-                    <span class="eltd-social-icon-widget ion-social-instagram"></span>
-                  </a>
-                  <div id="eltd_instagram_widget-4" class="widget eltd-footer-column-1 widget_eltd_instagram_widget"></div>
+                  <!-- COMPACT FOOTER ROW START -->
+                  <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 24px; color: #fff; font-size: 16px; margin: 18px 0 8px 0;">
+                    <!-- Social Icons -->
+                    <span>
+                      <a class="eltd-social-icon-widget-holder eltd-icon-has-hover" style="font-size: 22px; margin: 0 8px; color: #fff;" href="https://www.facebook.com/qodeinteractive/" target="_blank"><span class="eltd-social-icon-widget ion-social-facebook"></span></a>
+                      <a class="eltd-social-icon-widget-holder eltd-icon-has-hover" style="font-size: 20px; margin: 0 8px; color: #fff;" href="https://www.youtube.com/QodeInteractiveVideos" target="_blank"><span class="eltd-social-icon-widget ion-social-youtube"></span></a>
+                      <a class="eltd-social-icon-widget-holder eltd-icon-has-hover" style="font-size: 20px; margin: 0 8px; color: #fff;" href="https://twitter.com/qodeinteractive" target="_blank"><span class="eltd-social-icon-widget ion-social-twitter"></span></a>
+                      <a class="eltd-social-icon-widget-holder eltd-icon-has-hover" style="font-size: 22px; margin: 0 8px; color: #fff;" href="https://www.instagram.com/qodeinteractive/" target="_blank"><span class="eltd-social-icon-widget ion-social-instagram"></span></a>
+                    </span>
+                    <span style="border-left: 1px solid #666; height: 22px; margin: 0 12px;"></span>
+                    <!-- Email -->
+                    <a href="mailto:info@enkajitravels.com" style="color: #fff; text-decoration: none; margin: 0 8px;"><i class="ion-email" style="margin-right: 6px;"></i>info@enkajitravels.com</a>
+                    <span style="border-left: 1px solid #666; height: 22px; margin: 0 12px;"></span>
+                    <!-- Phone -->
+                    <a href="tel:+254700767290" style="color: #fff; text-decoration: none; margin: 0 8px;"><i class="ion-ios-telephone" style="margin-right: 6px;"></i>+254 700 767 290</a>
+                  </div>
+                  <!-- COMPACT FOOTER ROW END -->
+                  <div style="text-align: center; margin: 8px 0 0 0; color: #fff; font-size: 17px;">
+                    <span style="font-size: 17px;">Get the best offers first. </span>
+                    <a href="../../bonvoyage/index.html" style="color: #fff; font-weight: bold; text-decoration: underline; font-size: 17px;">Subscribe.</a>
+                  </div>
+                  <div
+                    id="eltd_instagram_widget-4"
+                    class="widget eltd-footer-column-1 widget_eltd_instagram_widget"
+                  ></div>
                   <div class="widget eltd-separator-widget">
-                    <div class="eltd-separator-holder clearfix eltd-separator-center eltd-separator-normal">
-                      <div class="eltd-separator" style="border-style: solid; margin-top: 3px"></div>
-                    </div>
-                  </div>
-                  <div id="text-2" class="widget eltd-footer-column-1 widget_text">
-                    <div class="textwidget">
-                      <p><span style="font-size: 19px">Get the best offers first.</span></p>
-                      <h6><a href="../../bonvoyage/index.html">Subscribe.</a></h6>
+                    <div
+                      class="eltd-separator-holder clearfix eltd-separator-center eltd-separator-normal"
+                    >
+                      <div
+                        class="eltd-separator"
+                        style="border-style: solid; margin-top: 3px"
+                      ></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="eltd-footer-bottom-holder eltd-footer-bottom-skin-dark">
+          <div class="eltd-footer-bottom-holder eltd-footer-bottom-skin-light">
             <div class="eltd-footer-bottom-inner eltd-full-width">
               <div class="eltd-grid-row">
                 <div class="eltd-grid-col-6">
-                  <div id="media_image-3" class="widget eltd-footer-bottom-column-1 widget_media_image">
-                    <img width="190" height="27" src="../../img/leftlogo.png" class="image wp-image-2685 attachment-full size-full" alt="a" decoding="async" loading="lazy" style="max-width: 100%; height: auto" />
+                  <div
+                    id="media_image-3"
+                    class="widget eltd-footer-bottom-column-1 widget_media_image"
+                  >
+                    <img
+                      width="190"
+                      height="27"
+                      src="../../wp-content/uploads/2018/02/footer-logo-1.png"
+                      class="image wp-image-2685 attachment-full size-full"
+                      alt="a"
+                      decoding="async"
+                      loading="lazy"
+                      style="max-width: 100%; height: auto"
+                    />
                   </div>
-                  <div id="media_image-4" class="widget eltd-footer-bottom-column-1 widget_media_image">
-                    <img width="190" height="27" src="../../wp-content/uploads/2018/02/footer-logo-light-1.png" class="image wp-image-2679 attachment-full size-full" alt="a" decoding="async" loading="lazy" style="max-width: 100%; height: auto" />
+                  <div
+                    id="media_image-4"
+                    class="widget eltd-footer-bottom-column-1 widget_media_image"
+                  >
+                    <img
+                      width="190"
+                      height="27"
+                      src="../../wp-content/uploads/2018/02/footer-logo-light-1.png"
+                      class="image wp-image-2679 attachment-full size-full"
+                      alt="a"
+                      decoding="async"
+                      loading="lazy"
+                      style="max-width: 100%; height: auto"
+                    />
                   </div>
                 </div>
                 <div class="eltd-grid-col-6">
-                  <div id="nav_menu-2" class="widget eltd-footer-bottom-column-2 widget_nav_menu">
+                  <div
+                    id="nav_menu-2"
+                    class="widget eltd-footer-bottom-column-2 widget_nav_menu"
+                  >
                     <div class="menu-menu-footer-container">
                       <ul id="menu-menu-footer" class="menu">
-                        <li id="menu-item-239" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-239">
-                          <a href="../../index.html" aria-current="page">Homepage</a>
+                        <li
+                          id="menu-item-239"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-239"
+                        >
+                          <a href="../../index.html">Homepage</a>
                         </li>
-                        <li id="menu-item-242" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-242">
+                        <li
+                          id="menu-item-242"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-242"
+                        >
                           <a href="../../bonvoyage/index.html">About</a>
                         </li>
-                        <li id="menu-item-241" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-241">
+                        <li
+                          id="menu-item-241"
+                          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-241"
+                        >
                           <a href="../../contact-us/index.html">Contact</a>
+                        </li>
+                        <li
+                          id="menu-item-240"
+                          class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-240"
+                        >
+                          <a href="../../destination-list/index.html" aria-current="page">Destinations</a>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="eltd-footer-copyright" style="text-align:center; margin-top:16px; padding-top:16px; border-top:1px solid #eee; color:#888; font-size:14px;">
+                © 2025 Working Wave, All Rights Reserved
               </div>
             </div>
           </div>

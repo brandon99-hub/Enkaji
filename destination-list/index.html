@@ -983,6 +983,50 @@
         }
       </style></noscript
     >
+    <style>
+    .hero-image-animated {
+      width: 90vw;
+      max-width: 90vw;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      border-radius: 18px;
+      box-sizing: border-box;
+      opacity: 0;
+      animation: fadeZoomInHero 1.5s ease-in forwards;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+      height: 600px;
+    }
+    @keyframes fadeZoomInHero {
+      to {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+      }
+    }
+    @media (max-width: 900px) {
+      .hero-image-animated {
+        height: 350px;
+        border-radius: 14px;
+      }
+    }
+    @media (max-width: 600px) {
+      .hero-image-animated {
+        height: 200px;
+        border-radius: 10px;
+      }
+    }
+    /* Remove padding from parent containers for hero image */
+    .eltd-container,
+    .eltd-container-inner,
+    .eltd-grid-row {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    </style>
   </head>
   <body
     class="page-template-default page page-id-275 theme-bonvoyage eltd-core-1.5 eltd-social-login-1.2 eltd-tours-1.2.1 woocommerce-no-js bonvoyage-ver-2.0 eltd-grid-1300 eltd-dropdown-animate-height eltd-header-standard eltd-menu-area-shadow-disable eltd-menu-area-in-grid-shadow-disable eltd-menu-area-border-disable eltd-menu-area-in-grid-border-disable eltd-logo-area-border-disable eltd-header-vertical-shadow-disable eltd-header-vertical-border-disable eltd-side-menu-slide-from-right eltd-woocommerce-columns-3 eltd-woo-normal-space eltd-woo-pl-info-below-image eltd-woo-single-thumb-on-left-side eltd-woo-single-has-pretty-photo eltd-default-mobile-header eltd-header-top-enabled eltd-fullscreen-search eltd-search-fade wpb-js-composer js-comp-ver-6.13.0 vc_responsive"
@@ -1429,7 +1473,7 @@
                                     >
                                       <div class="wpb_text_column wpb_content_element">
                                         <div class="wpb_wrapper">
-                                          <div style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/masai-mara.jpg'); background-size: cover; background-position: center; height: 500px; display: flex; align-items: center; justify-content: center; text-align: center; color: white; border-radius: 8px; margin-bottom: 40px;">
+                                          <div class="hero-image-animated" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/trial.jpg'); background-size: cover; background-position: center;">
                                             <div>
                                               <h1 style="font-size: 48px; margin-bottom: 20px; font-family: 'Playfair Display SC', serif;">Discover Kenya</h1>
                                               <p style="font-size: 20px; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
