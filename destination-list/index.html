@@ -1027,6 +1027,33 @@
       padding-right: 0 !important;
     }
     </style>
+    <style>
+.destination-text-bg {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  z-index: 1;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.eltd-tours-destination-item-image h3,
+.eltd-tours-destination-item-image p {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+.destination-text-container {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+    </style>
   </head>
   <body
     class="page-template-default page page-id-275 theme-bonvoyage eltd-core-1.5 eltd-social-login-1.2 eltd-tours-1.2.1 woocommerce-no-js bonvoyage-ver-2.0 eltd-grid-1300 eltd-dropdown-animate-height eltd-header-standard eltd-menu-area-shadow-disable eltd-menu-area-in-grid-shadow-disable eltd-menu-area-border-disable eltd-menu-area-in-grid-border-disable eltd-logo-area-border-disable eltd-header-vertical-shadow-disable eltd-header-vertical-border-disable eltd-side-menu-slide-from-right eltd-woocommerce-columns-3 eltd-woo-normal-space eltd-woo-pl-info-below-image eltd-woo-single-thumb-on-left-side eltd-woo-single-has-pretty-photo eltd-default-mobile-header eltd-header-top-enabled eltd-fullscreen-search eltd-search-fade wpb-js-composer js-comp-ver-6.13.0 vc_responsive"
@@ -1217,34 +1244,12 @@
                 <div class="eltd-position-right-inner">
                   <nav class="eltd-main-menu eltd-drop-down eltd-default-nav">
                     <ul id="menu-main-menu" class="clearfix">
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has_sub narrow">
-                        <a href="../index.html"><span class="item_outer"><span class="item_text">Home</span></span></a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has_sub narrow">
-                        <a href="index.html" class="current"><span class="item_outer"><span class="item_text">Destinations</span></span></a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has_sub narrow">
-                        <a href="../bonvoyage/index.html"><span class="item_outer"><span class="item_text">About Us</span></span></a>
-                      </li>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has_sub narrow">
-                        <a href="../contact-us/index.html"><span class="item_outer"><span class="item_text">Contact Us</span></span></a>
-                      </li>
+                      <li><a href="../index.html"><span class="item_outer"><span class="item_text">Home</span></span></a></li>
+                      <li><a href="index.html"><span class="item_outer"><span class="item_text">Destinations</span></span></a></li>
+                      <li><a href="../bonvoyage/index.html"><span class="item_outer"><span class="item_text">About Us</span></span></a></li>
+                      <li><a href="../contact-us/index.html"><span class="item_outer"><span class="item_text">Contact Us</span></span></a></li>
                     </ul>
                   </nav>
-
-
-
-                  <a
-                    class="eltd-side-menu-button-opener eltd-icon-has-hover"
-                    href="javascript:void(0)"
-                    style="margin: 0 0 6px 0"
-                  >
-                    <span class="eltd-side-menu-icon">
-                      <span class="eltd-side-line eltd-line-1"></span>
-                      <span class="eltd-side-line eltd-line-2"></span>
-                      <span class="eltd-side-line eltd-line-3"></span>
-                    </span>
-                  </a>
                 </div>
               </div>
             </div>
@@ -1337,20 +1342,6 @@
                         </li>
                       </ul>
                     </nav>
-
-
-
-                    <a
-                      class="eltd-side-menu-button-opener eltd-icon-has-hover"
-                      href="javascript:void(0)"
-                      style="margin: 0 0 6px 0"
-                    >
-                      <span class="eltd-side-menu-icon">
-                        <span class="eltd-side-line eltd-line-1"></span>
-                        <span class="eltd-side-line eltd-line-2"></span>
-                        <span class="eltd-side-line eltd-line-3"></span>
-                      </span>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -1507,11 +1498,10 @@
                                         <a href="../destinations/masai-mara/index.html" style="text-decoration: none;">
                                           <div class="eltd-tours-destination-item-image" style="position: relative; overflow: hidden;">
                                             <img src="../img/masai-mara.jpg" alt="Masai Mara National Reserve" style="width: 100%; height: 250px; object-fit: cover; transition: transform 0.3s ease;" />
-                                            <div style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.7); color: white; padding: 5px 10px; border-radius: 15px; font-size: 12px; font-weight: bold;">SAFARI</div>
                                             <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 20px; color: white;">
                                               <h3 style="margin: 0; font-size: 18px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">Masai Mara</h3>
                                               <p style="margin: 5px 0 0 0; font-size: 12px; opacity: 0.9;">National Reserve</p>
-                                    </div>
+                                            </div>
                                           </div>
                                           <div class="eltd-tours-destination-item-content" style="padding: 20px; background: white;">
                                             <div class="eltd-tours-destination-item-content-inner">
@@ -1800,13 +1790,13 @@
                                     
                                     <!-- Call to Action Section -->
                                     <div style="margin-top: 60px; text-align: center;">
-                                      <div style="background: linear-gradient(135deg, #0693e3, #9b51e0); color: white; padding: 60px 40px; border-radius: 12px;">
+                                      <div style="background: linear-gradient(135deg, #a3896d, #000000); color: white; padding: 60px 40px; border-radius: 12px;">
                                         <h2 style="margin-bottom: 20px; font-family: 'Playfair Display SC', serif; font-size: 36px;">Ready to Start Your Kenyan Adventure?</h2>
                                         <p style="font-size: 18px; margin-bottom: 30px; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto;">
                                           Let our expert team help you plan the perfect safari, beach holiday, or cultural experience in Kenya
                                         </p>
                                         <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                                          <a href="../contact-us/index.html" style="background: white; color: #0693e3; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s ease;">
+                                          <a href="../contact-us/index.html" style="background: white; color: #a3896d; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s ease; border: 2px solid #a3896d;">
                                             Contact Us Today
                                           </a>
                                           <a href="../about-us/index.html" style="background: rgba(255,255,255,0.2); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: all 0.3s ease; border: 2px solid white;">
