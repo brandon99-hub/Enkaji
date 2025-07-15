@@ -673,10 +673,10 @@
         background-attachment: fixed;
       }
       .page-id-28 .eltd-page-footer .eltd-footer-top-holder {
-        background-color: #ffffff;
+        background-color: #000000;
       }
       .page-id-28 .eltd-page-footer .eltd-footer-bottom-holder {
-        background-color: #ffffff;
+        background-color: #000000;
       }
       .page-id-28
         .eltd-content
@@ -1124,6 +1124,64 @@
       }
     }
     </style>
+    <!-- START: Main Offerings Cards (NEW) -->
+    <style>
+    .enkaji-offerings-row {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 32px;
+      justify-content: center;
+      margin: 0 auto 48px auto;
+      max-width: 1200px;
+    }
+    .enkaji-offering-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 6px 32px rgba(160,138,107,0.13), 0 2px 8px rgba(0,0,0,0.06);
+      flex: 1 1 400px;
+      max-width: 450px;
+      min-width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 0 32px 0;
+      transition: transform 0.22s cubic-bezier(.4,2,.6,1), box-shadow 0.22s;
+      position: relative;
+    }
+    .enkaji-offering-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 16px 40px rgba(160,138,107,0.18), 0 6px 18px rgba(0,0,0,0.10);
+      z-index: 2;
+    }
+    .enkaji-offering-img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 20px 20px 0 0;
+      margin-bottom: 0;
+    }
+    .enkaji-offering-title {
+      font-family: 'Playfair Display SC', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #a08a6b;
+      margin: 24px 0 10px 0;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+    .enkaji-offering-desc {
+      color: #444;
+      font-size: 1rem;
+      text-align: center;
+      padding: 0 22px;
+      margin-bottom: 0;
+    }
+    @media (max-width: 900px) {
+      .enkaji-offerings-row { flex-direction: column; gap: 28px; align-items: center; }
+      .enkaji-offering-card { max-width: 95vw; }
+    }
+    </style>
+    <!-- END: Main Offerings Cards (NEW) -->
   </head>
   <body
     class="home page-template page-template-full-width page-template-full-width-php page page-id-28 theme-bonvoyage eltd-core-1.5 eltd-social-login-1.2 eltd-tours-1.2.1 woocommerce-no-js bonvoyage-ver-2.0 eltd-grid-1300 eltd-content-is-behind-header eltd-dropdown-animate-height eltd-header-standard eltd-menu-area-shadow-disable eltd-menu-area-in-grid-shadow-disable eltd-menu-area-border-disable eltd-menu-area-in-grid-border-disable eltd-logo-area-border-disable eltd-header-vertical-shadow-disable eltd-header-vertical-border-disable eltd-side-menu-slide-from-right eltd-woocommerce-columns-3 eltd-woo-normal-space eltd-woo-pl-info-below-image eltd-woo-single-thumb-on-left-side eltd-woo-single-has-pretty-photo eltd-default-mobile-header eltd-header-top-enabled eltd-fullscreen-search eltd-search-fade wpb-js-composer js-comp-ver-6.13.0 vc_responsive"
@@ -1509,6 +1567,25 @@
 </p>
 
                                             </h5>
+<!-- START: Main Offerings Cards (MOVED HERE) -->
+<div class="enkaji-offerings-row">
+  <div class="enkaji-offering-card">
+    <img src="img/p4.jpg" alt="Custom Tour Planning & Booking" class="enkaji-offering-img" />
+    <div class="enkaji-offering-title">Custom Tour Planning & Booking</div>
+    <div class="enkaji-offering-desc">We design tailor-made tours to fit your dreams and budget. From wildlife safaris, cultural experiences, beach holidays, to city explorations — we handle all your bookings for accommodation, activities, flights, and transportation.</div>
+  </div>
+  <div class="enkaji-offering-card">
+    <img src="img/p5.jpg" alt="Tour Van Rentals with Professional Drivers" class="enkaji-offering-img" />
+    <div class="enkaji-offering-title">Tour Van Rentals with Professional Drivers</div>
+    <div class="enkaji-offering-desc">Travel in comfort and style with our modern, fully-equipped tour vans. Whether you need airport transfers, day trips, or multi-day excursions, our experienced drivers and guides ensure a safe and enjoyable journey.</div>
+  </div>
+  <div class="enkaji-offering-card">
+    <img src="img/p7.jpg" alt="Group, Corporate & Special Event Travel" class="enkaji-offering-img" />
+    <div class="enkaji-offering-title">Group, Corporate & Special Event Travel</div>
+    <div class="enkaji-offering-desc">We organize travel for corporate retreats, school trips, group tours, and special events. Our team manages all the logistics so you can focus on creating lasting memories with your team, family, or friends.</div>
+  </div>
+</div>
+<!-- END: Main Offerings Cards (MOVED HERE) -->
                                           </div>
                                         </div>
                                       </div>
@@ -1521,537 +1598,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="eltd-row-grid-section-wrapper">
-                      <div class="eltd-row-grid-section">
-                        <div
-                          class="vc_row wpb_row vc_row-fluid vc_custom_1520940084230"
-                        >
-                          <div
-                            class="wpb_column vc_column_container vc_col-sm-12"
-                          >
-                            <div class="vc_column-inner">
-                              <div class="wpb_wrapper">
-                                <div
-                                  class="eltd-tours-list-holder eltd-tours-row eltd-normal-space eltd-tours-columns-3 eltd-tours-type-standard"
-                                >
-                                  <div
-                                    class="eltd-tours-list-pagination-data"
-                                  >
-                                    <input
-                                      type="hidden"
-                                      name="number"
-                                      value="6"
-                                    />
-                                    <input
-                                      type="hidden"
-                                      name="order_by"
-                                      value="date"
-                                    />
-                                    <input
-                                      type="hidden"
-                                      name="order"
-                                      value="ASC"
-                                    />
-                                    <input
-                                      type="hidden"
-                                      name="tour_category"
-                                      value="hotel"
-                                    />
-                                    <input
-                                      type="hidden"
-                                      name="destination"
-                                      value=""
-                                    />
-                                    <input
-                                      type="hidden"
-                                      name="thumb_size"
-                                      value="full"
-                                    />
-                                    <input
-                                      type="hidden"
-                                      name="next_page"
-                                      value="2"
-                                    />
-                                    <input
-                                      type="hidden"
-                                      name="tour_type"
-                                      value="standard"
-                                    />
-                                    <input
-                                      type="hidden"
-                                      name="image_size"
-                                      value="full"
-                                    />
-                                    <input
-                                      type="hidden"
-                                      name="title_tag"
-                                      value="h4"
-                                    />
-                                    <input
-                                      type="hidden"
-                                      name="text_length"
-                                      value="14"
-                                    />
-                                  </div>
 
-                                  <div
-                                    class="eltd-tours-list-holder-inner eltd-tours-row-inner-holder eltd-outer-space"
-                                  >
-                                    <div
-                                      class="eltd-tours-list-grid-sizer"
-                                    ></div>
-                                    <div
-                                      class="eltd-tours-standard-item eltd-tours-row-item eltd-item-space post-229 tour-item type-tour-item status-publish has-post-thumbnail hentry tour-category-hotel tour-category-tour-guide tour-attribute-5-star-accommodation tour-attribute-airport-transfers tour-attribute-breakfast tour-attribute-personal-guide"
-                                    >
-                                      <div
-                                        class="eltd-tours-standard-item-image-holder"
-                                      >
-                                        <a href="tour-item/verona/index.html">
-                                          <img
-                                            width="800"
-                                            height="510"
-                                            src="img/p4.jpg"
-                                            class="attachment-full size-full"
-                                            alt="a"
-                                            decoding="async"
-                                            loading="lazy"
-                                            srcset="
-                                              img/p4.jpg         800w,
-                                              img/p4.jpg 508w,
-                                              img/p4.jpg 300w,
-                                              img/p4.jpg 768w
-                                            "
-                                            sizes="(max-width: 800px) 100vw, 800px"
-                                          />
-                                        </a>
-                                        <span
-                                          class="eltd-tours-standard-item-label-holder"
-                                        >
-                                          <span class="eltd-tour-item-label">
-                                            <span
-                                              class="eltd-tour-item-label-inner"
-                                            >
-                                            </span>
-                                          </span>
-                                        </span>
-                                      </div>
-
-                                      <div
-                                        class="eltd-tours-standard-item-content-holder"
-                                      >
-                                        <div
-                                          class="eltd-tours-standard-item-content-inner"
-                                        >
-                                          <div
-                                            class="eltd-tours-standard-item-title-price-holder"
-                                          >
-                                            <h4>
-                                              <a
-                                                href="tour-item/verona/index.html"
-                                                >Custom Tour Planning & Booking</a>
-                                              <!-- <span
-                                                class="eltd-tours-standard-item-price-holder"
-                                              >
-                                                <span
-                                                  class="eltd-tours-price-holder"
-                                                >
-                                                  <span
-                                                    class="eltd-tours-item-price"
-                                                    >$1750</span
-                                                  >
-                                                </span>
-                                              </span> -->
-                                            </h4>
-                                          </div>
-                                          <div
-                                            class="eltd-tours-standard-item-excerpt"
-                                          >
-                                            We design tailor-made tours to fit your dreams and budget. From wildlife safaris, cultural experiences, beach holidays, to city explorations — we handle all your bookings for accommodation, activities, flights, and transportation.
-
-
-                                          </div>
-                                        </div>
-                                        <div
-                                          class="eltd-tours-standard-item-bottom-content"
-                                        >
-                                          <div
-                                            class="eltd-tours-standard-item-bottom-item"
-                                          >
-                                            <div
-                                              class="eltd-tour-duration-holder"
-                                            >
-                                              <span
-                                                class="eltd-tour-duration-icon eltd-tour-info-icon"
-                                              >
-                                                <span
-                                                  class="lnr lnr-history"
-                                                ></span>
-                                              </span>
-                                              <!-- <span
-                                                class="eltd-tour-info-label"
-                                              >
-                                                15 Days
-                                              </span> -->
-                                            </div>
-                                          </div>
-
-                                          <!-- <div
-                                            class="eltd-tours-standard-item-bottom-item"
-                                          >
-                                            <div
-                                              class="eltd-tour-min-age-holder"
-                                            >
-                                              <span
-                                                class="eltd-tour-min-age-icon eltd-tour-info-icon"
-                                              >
-                                                <span
-                                                  class="lnr lnr-user"
-                                                ></span>
-                                              </span>
-
-                                              <span
-                                                class="eltd-tour-info-label"
-                                              >
-                                                16+
-                                              </span>
-                                            </div>
-                                          </div> -->
-
-                                          <div
-                                            class="eltd-tours-standard-item-rating eltd-tours-standard-item-bottom-item"
-                                          >
-                                            <div
-                                              class="eltd-reviews-list-info eltd-reviews-total-average"
-                                            >
-                                              <div
-                                                class="eltd-item-reviews-display-wrapper clearfix"
-                                              >
-                                                <div
-                                                  class="eltd-item-reviews-average-wrapper"
-                                                >
-                                                  <div
-                                                    class="eltd-item-reviews-average-rating"
-                                                  >
-                                                    <div
-                                                      class="star-ratings-sprite"
-                                                    >
-                                                      <span
-                                                        style="width: 80%"
-                                                        class="star-ratings-sprite-rating"
-                                                      ></span>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div
-                                        class="eltd-tours-standard-item eltd-tours-row-item eltd-item-space post-626 tour-item type-tour-item status-publish has-post-thumbnail hentry tour-category-hotel tour-category-tour-guide tour-attribute-5-star-accommodation tour-attribute-airport-transfers tour-attribute-entry-fees tour-attribute-personal-guide"
-                                      >
-                                        <div
-                                          class="eltd-tours-standard-item-image-holder"
-                                        >
-                                          <a href="tour-item/rome/index.html">
-                                            <img
-                                              width="800"
-                                              height="510"
-                                              src="img/p5.jpg"
-                                              class="attachment-full size-full"
-                                              alt="a"
-                                              decoding="async"
-                                              loading="lazy"
-                                              srcset="
-                                                img/p5.jpg         800w,
-                                                img/p5.jpg 508w,
-                                                img/p5.jpg 300w,
-                                                img/p5.jpg 768w
-                                              "
-                                              sizes="(max-width: 800px) 100vw, 800px"
-                                            />
-                                          </a>
-                                          <span
-                                            class="eltd-tours-standard-item-label-holder"
-                                          >
-                                            <span class="eltd-tour-item-label">
-                                              <span
-                                                class="eltd-tour-item-label-inner"
-                                              >
-                                              </span>
-                                            </span>
-                                          </span>
-                                        </div>
-
-                                        <div
-                                          class="eltd-tours-standard-item-content-holder"
-                                        >
-                                          <div
-                                            class="eltd-tours-standard-item-content-inner"
-                                          >
-                                            <div
-                                              class="eltd-tours-standard-item-title-price-holder"
-                                            >
-                                              <h4>
-                                                <a
-                                                  href="tour-item/rome/index.html"
-                                                  >Tour Van Rentals with Professional Drivers</a
-                                                >
-                                                <span
-                                                  class="eltd-tours-standard-item-price-holder"
-                                                >
-                                                  <span
-                                                    class="eltd-tours-price-holder"
-                                                  >
-                                                    <!-- <span
-                                                      class="eltd-tours-item-price"
-                                                      >$1990</span
-                                                    > -->
-                                                  </span>
-                                                </span>
-                                              </h4>
-                                            </div>
-                                            <div
-                                              class="eltd-tours-standard-item-excerpt"
-                                            >
-                                              Travel in comfort and style with our modern, fully-equipped tour vans. Whether you need airport transfers, day trips, or multi-day excursions, our experienced drivers and guides ensure a safe and enjoyable journey.
-                                            </div>
-                                          </div>
-                                          <div
-                                            class="eltd-tours-standard-item-bottom-content"
-                                          >
-                                            <div
-                                              class="eltd-tours-standard-item-bottom-item"
-                                            >
-                                              <div
-                                                class="eltd-tour-duration-holder"
-                                              >
-                                                <span
-                                                  class="eltd-tour-duration-icon eltd-tour-info-icon"
-                                                >
-                                                  <span
-                                                    class="lnr lnr-history"
-                                                  ></span>
-                                                </span>
-                                                <!-- <span
-                                                  class="eltd-tour-info-label"
-                                                >
-                                                  10 Days
-                                                </span> -->
-                                              </div>
-                                            </div>
-
-                                            <!-- <div
-                                              class="eltd-tours-standard-item-bottom-item"
-                                            >
-                                              <div
-                                                class="eltd-tour-min-age-holder"
-                                              >
-                                                <span
-                                                  class="eltd-tour-min-age-icon eltd-tour-info-icon"
-                                                >
-                                                  <span
-                                                    class="lnr lnr-user"
-                                                  ></span>
-                                                </span>
-
-                                                <span
-                                                  class="eltd-tour-info-label"
-                                                >
-                                                  16+
-                                                </span>
-                                              </div>
-                                            </div> -->
-
-                                            <div
-                                              class="eltd-tours-standard-item-rating eltd-tours-standard-item-bottom-item"
-                                            >
-                                              <div
-                                                class="eltd-reviews-list-info eltd-reviews-total-average"
-                                              >
-                                                <div
-                                                  class="eltd-item-reviews-display-wrapper clearfix"
-                                                >
-                                                  <div
-                                                    class="eltd-item-reviews-average-wrapper"
-                                                  >
-                                                    <div
-                                                      class="eltd-item-reviews-average-rating"
-                                                    >
-                                                      <div
-                                                        class="star-ratings-sprite"
-                                                      >
-                                                        <span
-                                                          style="width: 83%"
-                                                          class="star-ratings-sprite-rating"
-                                                        ></span>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div
-                                        class="eltd-tours-standard-item eltd-tours-row-item eltd-item-space post-641 tour-item type-tour-item status-publish has-post-thumbnail hentry tour-category-hotel tour-category-tour-guide tour-attribute-5-star-accommodation tour-attribute-breakfast tour-attribute-personal-guide"
-                                      >
-                                        <div
-                                          class="eltd-tours-standard-item-image-holder"
-                                        >
-                                          <a href="tour-item/como/index.html">
-                                            <img
-                                              width="800"
-                                              height="510"
-                                              src="img/p6.jpg"
-                                              class="attachment-full size-full"
-                                              alt=""
-                                              decoding="async"
-                                              loading="lazy"
-                                              srcset="
-                                                img/p6.jpg         800w,
-                                                img/p6.jpg 508w,
-                                                img/p6.jpg 300w,
-                                                img/p6.jpg 768w
-                                              "
-                                              sizes="(max-width: 800px) 100vw, 800px"
-                                            />
-                                          </a>
-                                          <span
-                                            class="eltd-tours-standard-item-label-holder"
-                                          >
-                                            <span class="eltd-tour-item-label">
-                                              <span
-                                                class="eltd-tour-item-label-inner"
-                                              >
-                                              </span>
-                                            </span>
-                                          </span>
-                                        </div>
-
-                                        <div
-                                          class="eltd-tours-standard-item-content-holder"
-                                        >
-                                          <div
-                                            class="eltd-tours-standard-item-content-inner"
-                                          >
-                                            <div
-                                              class="eltd-tours-standard-item-title-price-holder"
-                                            >
-                                              <h4>
-                                                <a
-                                                  href="tour-item/como/index.html"
-                                                  >Group, Corporate & Special Event Travel</a
-                                                >
-                                                <span
-                                                  class="eltd-tours-standard-item-price-holder"
-                                                >
-                                                  <span
-                                                    class="eltd-tours-price-holder"
-                                                  >
-                                                    <!-- <span
-                                                      class="eltd-tours-item-price"
-                                                      >$1390</span
-                                                    >
-                                                  </span> -->
-                                                </span>
-                                              </h4>
-                                            </div>
-                                            <div
-                                              class="eltd-tours-standard-item-excerpt"
-                                            >
-                                              We organize travel for corporate retreats, school trips, group tours, and special events. Our team manages all the logistics so you can focus on creating lasting memories with your team, family, or friends.
-
-
-                                            </div>
-                                          </div>
-                                          <div
-                                            class="eltd-tours-standard-item-bottom-content"
-                                          >
-                                            <div
-                                              class="eltd-tours-standard-item-bottom-item"
-                                            >
-                                              <div
-                                                class="eltd-tour-duration-holder"
-                                              >
-                                                <span
-                                                  class="eltd-tour-duration-icon eltd-tour-info-icon"
-                                                >
-                                                  <span
-                                                    class="lnr lnr-history"
-                                                  ></span>
-                                                </span>
-                                                <!-- <span
-                                                  class="eltd-tour-info-label"
-                                                >
-                                                  8 Days
-                                                </span> -->
-                                              </div>
-                                            </div>
-
-                                            <!-- <div
-                                              class="eltd-tours-standard-item-bottom-item"
-                                            >
-                                              <div
-                                                class="eltd-tour-min-age-holder"
-                                              >
-                                                <span
-                                                  class="eltd-tour-min-age-icon eltd-tour-info-icon"
-                                                >
-                                                  <span
-                                                    class="lnr lnr-user"
-                                                  ></span>
-                                                </span>
-
-                                                <span
-                                                  class="eltd-tour-info-label"
-                                                >
-                                                  16+
-                                                </span>
-                                              </div>
-                                            </div> -->
-
-                                            <div
-                                              class="eltd-tours-standard-item-rating eltd-tours-standard-item-bottom-item"
-                                            >
-                                              <div
-                                                class="eltd-reviews-list-info eltd-reviews-total-average"
-                                              >
-                                                <div
-                                                  class="eltd-item-reviews-display-wrapper clearfix"
-                                                >
-                                                  <div
-                                                    class="eltd-item-reviews-average-wrapper"
-                                                  >
-                                                    <div
-                                                      class="eltd-item-reviews-average-rating"
-                                                    >
-                                                      <div
-                                                        class="star-ratings-sprite"
-                                                      >
-                                                        <span
-                                                          style="width: 77%"
-                                                          class="star-ratings-sprite-rating"
-                                                        ></span>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                     <div
                       class="vc_row wpb_row vc_row-fluid vc_custom_1521718761454 vc_row-has-fill"
                     >
@@ -2826,6 +2373,7 @@
                         letter-spacing: 2.4px;
                         text-transform: initial;
                         text-align: center;
+                        color: #fff;
                       "
                       data-item-class="eltd-cf-1436"
                       data-font-size-680="48px"
@@ -2864,10 +2412,6 @@
                     <a href="tel:+254700767290" style="color: #fff; text-decoration: none; margin: 0 8px;"><i class="ion-ios-telephone" style="margin-right: 6px;"></i>+254 700 767 290</a>
                   </div>
                   <!-- COMPACT FOOTER ROW END -->
-                  <div style="text-align: center; margin: 8px 0 0 0; color: #fff; font-size: 17px;">
-                    <span style="font-size: 17px;">Get the best offers first. </span>
-                    <a href="bonvoyage/index.html" style="color: #fff; font-weight: bold; text-decoration: underline; font-size: 17px;">Subscribe.</a>
-                  </div>
                   <div
                     id="eltd_instagram_widget-4"
                     class="widget eltd-footer-column-1 widget_eltd_instagram_widget"
@@ -2932,25 +2476,25 @@
                           id="menu-item-239"
                           class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-239"
                         >
-                          <a href="index.html" aria-current="page">Homepage</a>
+                          <a href="index.html" aria-current="page" style="color: #fff;">Homepage</a>
                         </li>
                         <li
                           id="menu-item-242"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-242"
                         >
-                          <a href="bonvoyage/index.html">About</a>
+                          <a href="bonvoyage/index.html" style="color: #fff;">About</a>
                         </li>
                         <li
                           id="menu-item-241"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-241"
                         >
-                          <a href="contact-us/index.html">Contact</a>
+                          <a href="contact-us/index.html" style="color: #fff;">Contact</a>
                         </li>
                         <li
                           id="menu-item-240"
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-240"
                         >
-                          <a href="destination-list/index.html">Destinations</a>
+                          <a href="destination-list/index.html" style="color: #fff;">Destinations</a>
                         </li>
                       </ul>
                     </div>
@@ -3363,76 +2907,29 @@
       /* <![CDATA[ */
       var eltdToursSearchData = {
         tours: [
-          "Springfield",
-          "Washington",
-          "Banjul",
-          "Zambezi",
-          "Phuket",
-          "Bali",
-          "Cairo",
-          "Banjul",
-          "Tunis",
-          "Zambezi",
-          "Draa Valley",
-          "Essaouira",
-          "San Antonio",
-          "New York City",
-          "Washington, D.C.",
-          "Miami",
-          "Chicago",
-          "Philadelphia",
-          "New York",
-          "Hampton",
-          "Sicily",
-          "Halkidiki",
-          "Tangier",
-          "Cala Mesquida",
-          "Santorini",
-          "Positano",
-          "Ibiza",
-          "Mykonos",
-          "Tessaloniki",
-          "Bay of Palma",
-          "Dubai",
-          "Deals",
-          "Transport",
-          "Flight",
-          "Arrangement",
-          "Lake Lugano",
-          "Loch Ness",
-          "Lake Bled",
-          "Gaube Lake",
-          "Lake Geneva",
-          "Lake Garda",
-          "Bali",
-          "Phuket",
-          "Essaouira",
-          "Como",
-          "Rome",
-          "Verona",
+          "Masai Mara",
+          "Amboseli",
+          "Tsavo",
+          "Samburu",
+          "Lake Nakuru",
+          "Nairobi National Park",
+          "Mount Kenya",
+          "Hell's Gate",
+          "Diani Beach",
+          "Lamu",
         ],
         destinations: [
-          "Thailand",
-          "Morocco",
-          "Japan",
-          "Indonesia",
-          "Egypt",
-          "USA",
-          "Scotland",
-          "Italy",
-          "Spain",
-          "Switzerland",
-          "Slovenia",
-          "Greece",
-          "Middle east",
-          "France",
-          "Japan",
-          "Indonesia",
-          "Tunisia",
-          "Morocco",
-          "Gambia",
-          "Zambia",
-          "Thailand",
+          "Kenya",
+          "East Africa",
+          "Masai Mara",
+          "Amboseli",
+          "Tsavo",
+          "Samburu",
+          "Lake Nakuru",
+          "Nairobi",
+          "Mount Kenya",
+          "Diani Beach",
+          "Lamu",
         ],
       };
       /* ]]> */
