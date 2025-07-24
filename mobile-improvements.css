@@ -1,0 +1,197 @@
+/* ENKAJI TRAVELS - MOBILE IMPROVEMENTS */
+
+/* Mobile Header Fixes */
+@media only screen and (max-width: 1024px) {
+  .eltd-page-header {
+    display: none !important;
+  }
+  
+  .eltd-mobile-header {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .eltd-mobile-header-holder {
+    padding: 10px 15px;
+  }
+  
+  .eltd-mobile-logo-wrapper img {
+    height: 35px !important;
+    width: auto;
+  }
+  
+  .eltd-mobile-menu-opener {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .eltd-mobile-menu-icon {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Mobile Navigation Menu */
+  .eltd-mobile-nav {
+    background: #fff;
+    border-top: 1px solid #eee;
+    display: none;
+  }
+  
+  .eltd-mobile-nav.active {
+    display: block;
+  }
+  
+  .eltd-mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .eltd-mobile-nav ul li {
+    border-bottom: 1px solid #eee;
+  }
+  
+  .eltd-mobile-nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 44px;
+    line-height: 1.4;
+    transition: background-color 0.3s ease;
+  }
+  
+  .eltd-mobile-nav ul li a:hover,
+  .eltd-mobile-nav ul li a.current {
+    background-color: #f8f9fa;
+    color: #a08a6b;
+  }
+  
+  /* Content margin adjustment for fixed mobile header */
+  body.mobile-nav-open .eltd-content {
+    margin-top: 70px !important;
+  }
+}
+
+/* Improved Touch Targets */
+@media only screen and (max-width: 768px) {
+  .eltd-mobile-menu-opener {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .eltd-mobile-nav ul li a {
+    padding: 18px 20px;
+    font-size: 18px;
+  }
+}
+
+/* Small Mobile Devices */
+@media only screen and (max-width: 480px) {
+  .eltd-mobile-header-holder {
+    padding: 8px 10px;
+  }
+  
+  .eltd-mobile-logo-wrapper img {
+    height: 30px !important;
+  }
+  
+  .eltd-mobile-nav ul li a {
+    padding: 16px 15px;
+  }
+  
+  /* Reduce homepage content top margin */
+  .eltd-content {
+    margin-top: -20px !important;
+  }
+}
+
+/* Navigation Animation */
+.eltd-mobile-nav {
+  transition: all 0.3s ease;
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.eltd-mobile-nav.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Hamburger Menu Animation */
+.eltd-mobile-menu-icon {
+  transition: transform 0.3s ease;
+}
+
+.eltd-mobile-menu-opener.active .eltd-mobile-menu-icon {
+  transform: rotate(90deg);
+}
+
+/* Better Image Responsiveness */
+@media only screen and (max-width: 768px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Hero section improvements */
+  .eltd-filter-slider {
+    min-height: 400px;
+  }
+  
+  /* Destination cards mobile optimization */
+  .enkaji-offering-row {
+    flex-direction: column;
+  }
+  
+  .enkaji-offering-card {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
+
+/* Typography improvements for mobile */
+@media only screen and (max-width: 680px) {
+  h1 {
+    font-size: 28px !important;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 24px !important;
+    line-height: 1.3;
+  }
+  
+  h3 {
+    font-size: 20px !important;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* Footer mobile improvements */
+@media only screen and (max-width: 768px) {
+  .eltd-page-footer .eltd-column-content {
+    width: 100% !important;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .eltd-footer-bottom-holder {
+    text-align: center;
+  }
+}
