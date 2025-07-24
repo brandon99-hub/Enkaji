@@ -8,7 +8,7 @@
     <meta property="og:image" content="" />
     <meta charset="UTF-8" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <title>Contact Us - Enkaji Travel Kenya</title>
     <meta name="description" content="Get in touch with Enkaji Travel Kenya for your Kenyan safari and travel adventures. Contact us for bookings, inquiries, and travel planning.">
     <script type="application/javascript">
@@ -70,9 +70,11 @@
         transition: all 0.3s ease;
       }
       
-      /* Adjust content to account for fixed header */
-      .eltd-content {
-        margin-top: 130px !important;
+      /* Mobile-responsive content margin */
+      @media screen and (min-width: 1025px) {
+        .eltd-content {
+          margin-top: 130px !important;
+        }
       }
       
       /* Hide any existing sticky headers */
@@ -82,9 +84,9 @@
     </style>
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     
-    <!-- Mobile Improvements -->
-    <link rel="stylesheet" href="../mobile-improvements.css" type="text/css" media="all" />
-    <script type="text/javascript" src="../mobile-navigation.js"></script>
+    <!-- ENHANCED MOBILE RESPONSIVENESS - COMPLETE OVERHAUL -->
+    <link rel="stylesheet" href="../mobile-responsive-complete.css" type="text/css" media="all" id="mobile-responsive-complete" />
+    <script type="text/javascript" src="../mobile-navigation-enhanced.js"></script>
   </head>
       <body class="page-template page-template-full-width page-template-full-width-php page page-id-contact theme-bonvoyage eltd-core-1.5 eltd-social-login-1.2 eltd-tours-1.2.1 woocommerce-no-js bonvoyage-ver-2.0 eltd-grid-1300 eltd-dropdown-animate-height eltd-header-standard eltd-menu-area-shadow-disable eltd-menu-area-in-grid-shadow-disable eltd-menu-area-border-disable eltd-menu-area-in-grid-border-disable eltd-logo-area-border-disable eltd-header-vertical-shadow-disable eltd-header-vertical-border-disable eltd-side-menu-slide-from-right eltd-woocommerce-columns-3 eltd-woo-normal-space eltd-woo-pl-info-below-image eltd-woo-single-thumb-on-left-side eltd-woo-single-has-pretty-photo eltd-default-mobile-header eltd-header-top-enabled eltd-fullscreen-search eltd-search-fade wpb-js-composer js-comp-ver-6.13.0 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
   <section class="eltd-side-menu">
@@ -230,7 +232,7 @@
         </header>
 
         <!-- Content -->
-        <div class="eltd-content" style="margin-top: 0px">
+        <div class="eltd-content">
           <div class="eltd-content-inner">
             <div class="eltd-full-width">
               <div class="eltd-full-width-inner">

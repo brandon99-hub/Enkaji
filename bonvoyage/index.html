@@ -12,7 +12,7 @@
 		<meta charset="UTF-8"/>
 		<link rel="profile" href="https://gmpg.org/xfn/11" />
 		
-				<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+				<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 		<title>Enkaji &#8211; Travels</title>
 <script type="application/javascript">var eltdToursAjaxURL = "https://bonvoyage.qodeinteractive.com/wp-admin/admin-ajax.php"</script><meta name='robots' content='max-image-preview:large' />
 
@@ -144,9 +144,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   
   /* Adjust content to account for fixed header */
-  .eltd-content {
-    margin-top: 130px !important;
-  }
+        @media screen and (min-width: 1025px) {
+        .eltd-content {
+          margin-top: 130px !important;
+        }
+      }
   
   /* Hide any existing sticky headers */
   .eltd-sticky-header {
@@ -360,8 +362,9 @@ var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPr
 <script type='text/javascript' src='../wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min%EF%B9%96ver=6.13.0.js' id='wpb_composer_front_js-js'></script>
 
 <!-- Mobile Improvements -->
-<link rel="stylesheet" href="../mobile-improvements.css" type="text/css" media="all" />
-<script type="text/javascript" src="../mobile-navigation.js"></script>
+    <!-- ENHANCED MOBILE RESPONSIVENESS - COMPLETE OVERHAUL -->
+    <link rel="stylesheet" href="../mobile-responsive-complete.css" type="text/css" media="all" id="mobile-responsive-complete" />
+    <script type="text/javascript" src="../mobile-navigation-enhanced.js"></script>
 </head>
 <body class="page-template page-template-full-width page-template-full-width-php page page-id-740 theme-bonvoyage eltd-core-1.5 eltd-social-login-1.2 eltd-tours-1.2.1 woocommerce-no-js bonvoyage-ver-2.0 eltd-grid-1300 eltd-dropdown-animate-height eltd-header-standard eltd-menu-area-shadow-disable eltd-menu-area-in-grid-shadow-disable eltd-menu-area-border-disable eltd-menu-area-in-grid-border-disable eltd-logo-area-border-disable eltd-header-vertical-shadow-disable eltd-header-vertical-border-disable eltd-side-menu-slide-from-right eltd-woocommerce-columns-3 eltd-woo-normal-space eltd-woo-pl-info-below-image eltd-woo-single-thumb-on-left-side eltd-woo-single-has-pretty-photo eltd-default-mobile-header eltd-header-top-enabled eltd-fullscreen-search eltd-search-fade wpb-js-composer js-comp-ver-6.13.0 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
 	<div class="eltd-wrapper">

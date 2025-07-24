@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Mobile Test - Enkaji Travels</title>
+    
+    <!-- ENHANCED MOBILE RESPONSIVENESS - COMPLETE OVERHAUL -->
+    <link rel="stylesheet" href="mobile-responsive-complete.css" type="text/css" media="all" id="mobile-responsive-complete" />
+    <script type="text/javascript" src="mobile-navigation-enhanced.js"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        
+        .test-content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .test-section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .status {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+        
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        
+        .test-button {
+            background: linear-gradient(135deg, #a08a6b, #8b7355);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 5px;
+            min-height: 50px;
+        }
+        
+        .test-button:hover {
+            background: linear-gradient(135deg, #8b7355, #a08a6b);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(160,138,107,0.3);
+        }
+        
+        .mobile-info {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .mobile-info code {
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- Mobile Header (should be visible on mobile) -->
+    <header class="eltd-mobile-header">
+        <div class="eltd-mobile-header-inner">
+            <div class="eltd-mobile-header-holder">
+                <div class="eltd-mobile-menu-opener">
+                    <a href="javascript:void(0)">
+                        <span class="eltd-mobile-menu-icon">☰</span>
+                    </a>
+                </div>
+                <div class="eltd-mobile-logo-wrapper">
+                    <a href="index.html">
+                        <img src="img/leftlogo.png" alt="Enkaji Travels" style="height: 40px; width: auto;" />
+                    </a>
+                </div>
+                <div style="width: 50px;"></div>
+            </div>
+            
+            <nav class="eltd-mobile-nav" role="navigation">
+                <ul>
+                    <li><a href="index.html"><span>Home</span></a></li>
+                    <li><a href="destination-list/index.html"><span>Destinations</span></a></li>
+                    <li><a href="bonvoyage/index.html"><span>About Us</span></a></li>
+                    <li><a href="contact-us/index.html"><span>Contact Us</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Desktop Header (should be hidden on mobile) -->
+    <header class="eltd-page-header" style="background: white; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <div style="text-align: center;">
+            <h2>Desktop Header (Should be hidden on mobile)</h2>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="eltd-content">
+        <div class="test-content">
+            <div class="test-section">
+                <h1>📱 MOBILE RESPONSIVENESS TEST</h1>
+                <p>This page tests the complete mobile responsiveness overhaul for Enkaji Travels website.</p>
+            </div>
+
+            <div class="test-section">
+                <h2>🔧 Current Mobile Status</h2>
+                <div id="mobile-status">
+                    <div class="mobile-info">
+                        <strong>Screen Width:</strong> <code id="screen-width">Loading...</code><br>
+                        <strong>User Agent:</strong> <code id="user-agent">Loading...</code><br>
+                        <strong>Mobile CSS Loaded:</strong> <code id="css-status">Checking...</code><br>
+                        <strong>Mobile Header Visible:</strong> <code id="header-status">Checking...</code><br>
+                        <strong>Desktop Header Hidden:</strong> <code id="desktop-header-status">Checking...</code>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test-section">
+                <h2>📋 Mobile Features Test</h2>
+                
+                <div class="status info">
+                    <strong>✓ Mobile Navigation:</strong> Tap the hamburger menu (☰) to test mobile navigation
+                </div>
+                
+                <div class="status info">
+                    <strong>✓ Touch Targets:</strong> All buttons below should be minimum 44px tall
+                </div>
+                
+                <button class="test-button" onclick="testMobileFeature('navigation')">Test Mobile Menu</button>
+                <button class="test-button" onclick="testMobileFeature('responsive')">Test Responsive Layout</button>
+                <button class="test-button" onclick="testMobileFeature('forms')">Test Form Elements</button>
+            </div>
+
+            <div class="test-section">
+                <h2>📱 Responsive Typography Test</h2>
+                <h1>Heading 1 - Should be 28px on mobile</h1>
+                <h2>Heading 2 - Should be 24px on mobile</h2>
+                <h3>Heading 3 - Should be 20px on mobile</h3>
+                <h4>Heading 4 - Should be 18px on mobile</h4>
+                <p>This paragraph should be 16px on mobile devices with 1.6 line height for optimal readability. The text should wrap properly and never cause horizontal scrolling.</p>
+            </div>
+
+            <div class="test-section">
+                <h2>📝 Form Test</h2>
+                <form class="wpcf7-form">
+                    <input type="text" placeholder="Your Name" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 6px;">
+                    <input type="email" placeholder="Your Email" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 6px;">
+                    <textarea placeholder="Your Message" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #ddd; border-radius: 6px; height: 100px; resize: vertical;"></textarea>
+                    <button type="submit" class="wpcf7-submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="test-section">
+                <h2>🖼️ Image Responsiveness Test</h2>
+                <img src="img/p1.png" alt="Test Image" style="width: 100%; height: auto; border-radius: 8px;">
+                <p><em>Image above should scale to 100% width and maintain aspect ratio.</em></p>
+            </div>
+
+            <div class="test-section">
+                <h2>📊 Test Results</h2>
+                <div id="test-results">
+                    <div class="status info">
+                        Tests will appear here as you interact with the page...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile detection and status update
+        function updateMobileStatus() {
+            document.getElementById('screen-width').textContent = window.innerWidth + 'px';
+            document.getElementById('user-agent').textContent = navigator.userAgent.includes('Mobile') ? 'Mobile Device' : 'Desktop';
+            
+            // Check if mobile CSS is loaded
+            const mobileCSS = document.getElementById('mobile-responsive-complete');
+            document.getElementById('css-status').textContent = mobileCSS ? '✓ Loaded' : '✗ Not Loaded';
+            
+            // Check mobile header visibility
+            const mobileHeader = document.querySelector('.eltd-mobile-header');
+            const mobileHeaderVisible = mobileHeader && window.getComputedStyle(mobileHeader).display !== 'none';
+            document.getElementById('header-status').textContent = mobileHeaderVisible ? '✓ Visible' : '✗ Hidden';
+            
+            // Check desktop header visibility
+            const desktopHeader = document.querySelector('.eltd-page-header');
+            const desktopHeaderHidden = desktopHeader && window.getComputedStyle(desktopHeader).display === 'none';
+            document.getElementById('desktop-header-status').textContent = desktopHeaderHidden ? '✓ Hidden' : '✗ Visible';
+        }
+
+        // Test mobile features
+        function testMobileFeature(feature) {
+            const resultsDiv = document.getElementById('test-results');
+            let resultHTML = '';
+            
+            switch(feature) {
+                case 'navigation':
+                    const mobileNav = document.querySelector('.eltd-mobile-nav');
+                    const isActive = mobileNav && mobileNav.classList.contains('active');
+                    resultHTML = `<div class="status ${isActive ? 'success' : 'warning'}">
+                        <strong>Mobile Navigation Test:</strong> ${isActive ? '✓ Menu is open and working' : 'ℹ Click the hamburger menu to test'}
+                    </div>`;
+                    break;
+                    
+                case 'responsive':
+                    const isResponsive = window.innerWidth <= 768;
+                    resultHTML = `<div class="status ${isResponsive ? 'success' : 'info'}">
+                        <strong>Responsive Layout Test:</strong> ${isResponsive ? '✓ Mobile layout active' : 'ℹ Resize browser to < 768px for mobile layout'}
+                    </div>`;
+                    break;
+                    
+                case 'forms':
+                    const formInputs = document.querySelectorAll('input, textarea, button');
+                    const touchOptimized = Array.from(formInputs).every(input => {
+                        const height = parseInt(window.getComputedStyle(input).height);
+                        return height >= 44;
+                    });
+                    resultHTML = `<div class="status ${touchOptimized ? 'success' : 'warning'}">
+                        <strong>Form Elements Test:</strong> ${touchOptimized ? '✓ All form elements are touch-optimized (44px+)' : '⚠ Some form elements may be too small'}
+                    </div>`;
+                    break;
+            }
+            
+            resultsDiv.innerHTML = resultHTML + resultsDiv.innerHTML;
+        }
+
+        // Update status on load and resize
+        window.addEventListener('load', updateMobileStatus);
+        window.addEventListener('resize', updateMobileStatus);
+
+        // Auto-test every 2 seconds
+        setInterval(updateMobileStatus, 2000);
+
+        console.log('Mobile Test Page Loaded - Enhanced Mobile Navigation System Active');
+    </script>
+</body>
+</html>
